@@ -1,8 +1,8 @@
-# Set the base image to Ubuntu
-FROM        ubuntu
+# Set the base image to rasbian
+FROM  resin/rpi-raspbian:wheezy
 
 # File Author / Maintainer
-MAINTAINER Anand Mani Sankar
+MAINTAINER Rob Mohid <rmohid@gmail.com>
 
 # Update the repository and install Redis Server
 RUN         apt-get update && apt-get install -y redis-server

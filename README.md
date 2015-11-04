@@ -1,4 +1,4 @@
-# A sample Docker workflow with Node.js, Redis and NGiNX
+# A sample Docker workflow with Node.js, Redis and NGiNX (modified to work on rasberry pi)
 
 [![Circle CI](https://circleci.com/gh/msanand/docker-workflow/tree/master.svg?style=shield)](https://circleci.com/gh/msanand/docker-workflow/tree/master)
 
