@@ -10,5 +10,5 @@ test:
     pre:
         - find . | perl -n -i -e's/(.*).x86/print `cp $1.x86 $1\n`/eg'
     override:
-        - docker-compose -f=docker=compose.build.yml  run -d --no-deps node1
+        - docker-compose -f docker-compose.build.yml  run -d --no-deps node1
         - cd node; mocha
