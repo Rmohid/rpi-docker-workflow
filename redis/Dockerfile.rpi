@@ -1,0 +1,14 @@
+# Set the base image to rasbian
+FROM  resin/rpi-raspbian:wheezy
+
+# File Author / Maintainer
+MAINTAINER Rob Mohid <rmohid@gmail.com>
+
+# Update the repository and install Redis Server
+RUN         apt-get update && apt-get install -y redis-server
+
+# Expose Redis port 6379
+EXPOSE      6379
+
+# Run Redis Server
+ENTRYPOINT  ["/usr/bin/redis-server"]
